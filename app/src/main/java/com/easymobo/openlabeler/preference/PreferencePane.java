@@ -92,6 +92,8 @@ public class PreferencePane extends DialogPane
         categories.add(new GeneralPane(bundle.getString("menu.general"), bundle));
         categories.add(new InferencePane(bundle.getString("menu.inference"), bundle));
         categories.add(new TrainingPane(bundle.getString("menu.train"), bundle));
+        categories.add(new CloudPane(bundle.getString("menu.trainOnCloud"), bundle));
+
 
         categoryList.getItems().addAll(EasyBind.map(categories, Category::getName));
 
